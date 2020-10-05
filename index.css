@@ -33,9 +33,10 @@ a {
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.04);
-    text-align: center;
-    
+    text-align: center;  
 }
+
+
 
 .profile-image {
     display: block;
@@ -43,7 +44,7 @@ a {
     height: 160px;
     border-radius: 50%;
     margin: 0 auto;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;    
 }
 
 #perfil {
@@ -192,6 +193,14 @@ text-align: center;
 
 }
 
+.java, .js, .angular, .firebase, .python, .ts {
+    filter: grayscale(90%);
+    transition: 0.5s;
+}
+
+.java:hover, .js:hover, .angular:hover, .firebase:hover, .python:hover, .ts:hover{
+    filter: grayscale(0);
+}
 
 #projetos {
     height: 100vh;
@@ -199,7 +208,7 @@ text-align: center;
 
 #contatos {
 
-   height: 90vh;
+   height: 100vh;
    
 }
 
