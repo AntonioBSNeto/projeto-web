@@ -1,0 +1,217 @@
+body {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+#home-page {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-lateral {
+    padding-top: 2em;
+    padding-bottom: 40px;
+    padding-left: 2em;
+    padding-right: 2em;
+    width: 20vw;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.04);
+    text-align: center;
+    
+}
+
+.profile-image {
+    display: block;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px; 
+}
+
+#perfil {
+    margin-bottom: 1.5em;
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    font-size: 24px;  
+}
+
+ul {
+    padding-left: 0px;
+}
+
+#perfil ul, li {
+    margin: 0 0 15px 0;
+    padding: 0;
+    padding-left: 0;
+    list-style: none;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;   
+}
+
+li a {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    position: relative;
+    padding: 10px 0;
+    transition: 0.3s ease-in-out; 
+}
+
+li a:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    bottom: 7px;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    transform: scaleX(0);
+    transition: 0.3s;
+ }
+
+li a:hover {
+    text-decoration: none;
+    color: black; 
+}
+
+li a:hover:after {
+    transform: scaleX(1); 
+}
+
+.active {
+    color: #000000;
+}
+
+.active:after {
+    transform: scaleX(1); 
+}
+
+
+.content {
+    width: 68vw;
+    margin-right: 1vw;
+    margin-left: 28vw;
+    height: 100vh;
+}
+
+#home {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100vh;
+}
+
+h1 {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 50px;
+}
+
+.tecnologias {
+text-align: center;
+}
+
+@media (min-width: 576px) { 
+    div.tecnologias img {
+        width: 80px;
+        margin-right: 5em;
+        justify-items: center;
+    }
+
+    #projetos img {
+        width: 250px;
+    }
+
+    p {
+        text-indent: 1.5rem;
+        line-height: 2rem;
+        text-align: justify;
+        color: rgba(0, 0, 0, 0.9);
+        font-size: 16px;
+    }
+
+}
+
+@media (min-width: 768px) { 
+    div.tecnologias img {
+        width: 100px;
+        margin-right: 5em;
+        justify-items: center;
+    }
+
+    #projetos img {
+        width: 300px;
+    }
+
+    p {
+        text-indent: 1.5rem;
+        line-height: 2rem;
+        text-align: justify;
+        color: rgba(0, 0, 0, 0.9);
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    div.tecnologias img {
+        width: 120px;
+        margin-right: 5em;
+        justify-items: center;
+    }
+
+
+    #projetos img {
+        width: 400px;
+    }
+
+    p {
+        text-indent: 1.5rem;
+        line-height: 2rem;
+        text-align: justify;
+        color: rgba(0, 0, 0, 0.9);
+        font-size: 20px;
+    }
+
+}
+
+
+#projetos {
+    height: 100vh;
+}
+
+#contatos {
+
+   height: 100vh;
+   
+}
+
+.footer li {
+    font-weight: normal;
+}
+
+.icone {
+    width: 20px;
+    margin-right: 5px;
+}
+
+section {
+    margin-bottom: 40px;
+}
